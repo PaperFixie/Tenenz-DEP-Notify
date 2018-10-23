@@ -16,7 +16,6 @@ echo "Dock process found, proceeding with enrollment..."
 
 echo "Time to caffeniate..."
 caffeinate -d -i -m -s -u &
-caffeinatepid=$!
 
 
 # Jamf Helper Variables
