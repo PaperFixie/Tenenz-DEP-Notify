@@ -17,7 +17,6 @@ echo "Dock process found, proceeding with enrollment..."
 echo "Time to caffeniate..."
 caffeinate -d -i -m -s -u &
 
-
 # Jamf Helper Variables
 
 jamfHelper="/Library/Application Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper"
@@ -31,7 +30,7 @@ alignHeading="center"
 # Jamf Helper
 
 userChoice=$("$jamfHelper" -windowType "$windowType" -lockHUD -icon "$icon" -title "$title" -description "$description" \
--alignDescription "$alignDescription" -alignHeading "$alignHeading" -timeout 10)
+-alignDescription "$alignDescription" -alignHeading "$alignHeading" -timeout 5)
 
 # Trigger next policy
 

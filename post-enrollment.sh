@@ -5,12 +5,21 @@
 echo "Fully caffeinated..."
 pkill caffeinate
 
-# Removing DEPNotify files
+# Create DEPNotify Setup doneFile.
+mkdir /Library/Application\ Support/JAMF/ExtensionAttributes/
+touch /Library/Application\ Support/JAMF/ExtensionAttributes/com.depnotify.provisioning.done
+
+# Check if DEPNotify.app is running
+depnotifyStatus=`pgrep DEPNotify`
+while [ $depnotifyStatus ]
+do
+    sleep 1
+    depnotifyStatus=`pgrep DEPNotify`
+done
+
+# Removing DEPNotify and support files
 echo "Removing DEPNotify.app and temp directory..."
 rm -rf /Applications/Utilities/DEPNotify.app
 rm -rf /var/tmp/*
-
-mkdir /Library/Application\ Support/JAMF/ExtensionAttributes/
-touch /Library/Application\ Support/JAMF/ExtensionAttributes/com.depnotify.provisioning.done
 
 exit 0
