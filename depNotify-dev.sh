@@ -39,7 +39,7 @@
   # - Auto removal of BOM files to reduce errors
   # - Sleep commands instead of polcies being called
   # - Quit Key set to command + control + x
-  TESTING_MODE=true # Set variable to true or false
+  TESTING_MODE=false # Set variable to true or false
 
 # Flag the app to open fullscreen or as a window
   FULLSCREEN=true # Set variable to true or false
@@ -50,21 +50,21 @@
 
 # Flag for using the custom branding icon from Self Service and Jamf Pro
 # This will override the banner image specified above
-  SELF_SERVICE_CUSTOM_BRANDING=false # Set variable to true or false
+  SELF_SERVICE_CUSTOM_BRANDING=true # Set variable to true or false
 
 # Main heading that will be displayed under the image
 # If this variable is left blank, the generic banner will appear
-  BANNER_TITLE="Welcome to Organization"
+  BANNER_TITLE="Welcome to Tenenz, Inc."
 
 # Paragraph text that will display under the main heading. For a new line, use \n
 # this variable is left blank, the generic message will appear. Leave single
 # quotes below as double quotes will break the new line.
-  MAIN_TEXT='Thanks for choosing a Mac at Organization! We want you to have a few applications and settings configured before you get started with your new Mac. This process should take 10 to 20 minutes to complete. \n \n If you need addtional software or help, please visit the Self Service app in your Applications folder or on your Dock.'
+  MAIN_TEXT='Thanks for joining us at Tenenz! We want you to have a few applications and settings configured before you get started with your new Mac. This process should take 10 to 20 minutes to complete. \n \n If you need addtional software or help, please visit the Self Service app in your Applications folder or on your Dock.'
 
 # URL for support or help that will open when the ? is clicked
 # If this variable is left blank, the ? will not appear
 # If using fullscreen mode, Safari will be launched behind the DEP Notify window
-  SUPPORT_URL="https://support.apple.com"
+  SUPPORT_URL=
 
 # Initial Start Status text that shows as things are firing up
   INITAL_START_STATUS="Initial Configuration Starting..."
@@ -76,13 +76,30 @@
 # The policy array must be formatted "Progress Bar text,customTrigger". These will be
 # run in order as they appear below.
   POLICY_ARRAY=(
-    "Installing Chrome,chrome"
-    "Installing Firefox,firefox"
-    "Installing XYZ,xyzCustomTrigger"
+    "Naming Mac...,name_mac"
+    "Installing Utilities...,dockutil"
+    "Installing Utilities...,fonts"
+    "Installing Utilities...,desktoppr"
+    "Installing Java for Mac...,java"
+    "Installing FileMaker Pro 14...,filemaker14"
+    "Installing FileMaker Plug-Ins...,fmp14_plugins"
+    "Installing FileMaker Pro 15...,filemaker15"
+    "Installing FileMaker Plug-Ins...,fmp15_plugins"
+    "Installing FileMaker Pro 16...,filemaker16"
+    "Installing FileMaker Plug-Ins...,fmp16_plugins"
+    "Installing Microsoft Office 2011...,office2011"
+    "Installing Chrome...,chrome"
+    "Installing Firefox...,firefox"
+    "Installing Slack...,slack"
+    "Finding Shortcuts...,server_shortcuts"
+#    "Adding Printers,<printer policy>"
+    "Swabbing Deck...,set_dock_items"
+    "Polishing Apple...,set_tenenz_wallpaper"
+    "Updating Inventory...,dep_update_inventory"
   )
 
 # Text that will display in the progress bar
-  INSTALL_COMPLETE_TEXT="Configuration Complete!"
+  INSTALL_COMPLETE_TEXT="Setup Complete!"
 
 # Script designed to automatically logout user to start FileVault process if
 # deferred enablement is detected. Text displayed if deferred status is on.
