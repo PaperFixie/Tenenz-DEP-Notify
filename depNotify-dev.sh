@@ -94,7 +94,7 @@
     "Installing Atom...,atom"
     "Finding Shortcuts...,server_shortcuts"
 #    "Adding Printers,<printer policy>"
-    "Swabbing Deck...,set_dock_items"
+    "Swabbing Deck...,set_dock_items_dev"
     "Polishing Apple...,set_tenenz_wallpaper"
     "Updating Inventory...,dep_update_inventory"
   )
