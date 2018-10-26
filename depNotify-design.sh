@@ -88,7 +88,7 @@
     "Installing FileMaker Pro 16...,filemaker16"
     "Installing FileMaker Plug-Ins...,fmp16_plugins"
     "Installing Microsoft Office 2011...,office2011"
-    "Installing Adobe Creative Cloud...,adobe_cc"
+#    "Installing Adobe Creative Cloud...,adobe_cc" ## currently not possible with our account
     "Installing Chrome...,chrome"
     "Installing Firefox...,firefox"
     "Installing Slack...,slack"
