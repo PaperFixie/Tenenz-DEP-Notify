@@ -95,7 +95,7 @@
     "Installing Suitcase Fusion...,suitcase_fusion"
     "Installing Atom...,atom"
     "Finding Shortcuts...,server_shortcuts"
-#    "Adding Printers,<printer policy>"
+    "Adding Printers,install_printers"
     "Swabbing Deck...,set_dock_items_design"
     "Polishing Apple...,set_tenenz_wallpaper"
     "Updating Inventory...,dep_update_inventory"

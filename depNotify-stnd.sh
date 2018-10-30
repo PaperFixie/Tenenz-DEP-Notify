@@ -92,7 +92,7 @@
     "Installing Firefox...,firefox"
     "Installing Slack...,slack"
     "Finding Shortcuts...,server_shortcuts"
-#    "Adding Printers,<printer policy>"
+    "Adding Printers,install_printers"
     "Swabbing Deck...,set_dock_items"
     "Polishing Apple...,set_tenenz_wallpaper"
     "Updating Inventory...,dep_update_inventory"
