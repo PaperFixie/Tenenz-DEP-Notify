@@ -19,7 +19,7 @@ done
 
 # Removing DEPNotify and support files
 echo "Removing DEPNotify.app and temp directory..."
-rm -rf /Applications/Utilities/DEPNotify.app
-rm -rf /var/tmp/*
+/bin/rm -rf /Applications/Utilities/DEPNotify.app
+/bin/rm -rf /var/tmp/*
 
 exit 0
