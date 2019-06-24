@@ -80,6 +80,7 @@
     "Installing Utilities...,dockutil"
     "Installing Utilities...,fonts"
     "Installing Utilities...,desktoppr"
+    "Installing Utilities...,nomad"
     "Installing Java for Mac...,java"
     "Installing FileMaker Pro 15...,filemaker15"
     "Installing FileMaker Plug-Ins...,fmp15_plugins"

@@ -81,6 +81,7 @@
     "Installing Utilities...,fonts"
     "Installing Utilities...,desktoppr"
     "Installing Java for Mac...,java"
+    "Installing Utilities...,nomad"
     "Installing FileMaker Pro 15...,filemaker15"
     "Installing FileMaker Plug-Ins...,fmp15_plugins"
     "Installing FileMaker Pro 16...,filemaker16"
