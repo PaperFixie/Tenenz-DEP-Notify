@@ -76,6 +76,7 @@
 # The policy array must be formatted "Progress Bar text,customTrigger". These will be
 # run in order as they appear below.
   POLICY_ARRAY=(
+    "Setting Timezone...,set_timezone"
     "Naming Mac...,name_mac"
     "Installing Utilities...,dockutil"
     "Installing Utilities...,fonts"
@@ -86,7 +87,7 @@
     "Installing FileMaker Plug-Ins...,fmp15_plugins"
     "Installing FileMaker Pro 16...,filemaker16"
     "Installing FileMaker Plug-Ins...,fmp16_plugins"
-    "Installing Microsoft Office 2011...,office2011"
+    "Installing Microsoft Office...,office365"
 #    "Installing Adobe Creative Cloud...,adobe_cc" ## currently not possible with our account
     "Installing Chrome...,chrome"
     "Installing Firefox...,firefox"
