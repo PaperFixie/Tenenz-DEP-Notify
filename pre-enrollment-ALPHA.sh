@@ -1,37 +1,24 @@
 #!/bin/bash
 
-# Standard Variables
+# Ensuring that the authchanger command is set to implement the notify window
+/usr/local/bin/authchanger -reset -prelogin NoMADLoginAD:Notify
 
-dockStatus=`pgrep Dock`
+# Reloading the login window
+/usr/bin/killall -HUP loginwindow
 
-until [ $dockStatus ]
-do
-    sleep 1
-    dockStatus=`pgrep Dock`
-done
+# DEPNotify Log file
+DNLOG="/var/tmp/depnotify.log"
 
-echo "Dock process found, proceeding with enrollment..."
+# Configure DEPNotify starting window
+echo "Command: MainTitle: New Mac Setup" > $DNLOG
+echo "Command: Image: /PATH/TO/A/PHOTO/YOU/WANT.png" >> $DNLOG
+echo "Command: WindowStyle: NotMovable" >> $DNLOG
+echo "Command: Status: Starting Configuration" >> $DNLOG
+echo "Command: MainText: Welcome to your new Mac! \n\nYour Mac will now begin automatically installing pre-determined software.\
+ It is recommend you ensure the machine is plugged into power." >> $DNLOG
 
-# Caffeinating
+# Getting triggered
+caffeinate -disu bash -c '/usr/local/bin/jamf policy -trigger DEPNotify-Enrollment-alpha'
 
-echo "Time to caffeniate..."
-caffeinate -d -i -m -s -u &
-
-# Jamf Helper Variables
-
-jamfHelper="/Library/Application Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper"
-windowType="hud"
-description="Please wait while we prepare your computer! Core applications will begin installing momentarily."
-icon="/Applications/Self Service.app/Contents/Resources/AppIcon.icns"
-title="macOS Enrollment"
-alignDescription="left"
-alignHeading="center"
-
-# Jamf Helper
-
-userChoice=$("$jamfHelper" -windowType "$windowType" -lockHUD -icon "$icon" -title "$title" -description "$description" \
--alignDescription "$alignDescription" -alignHeading "$alignHeading" -timeout 5)
-
-# Trigger next policy
-
-/usr/local/jamf/bin/jamf policy -event "DEPNotify-Enrollment-alpha"
+# Exiting with the policy return code to properly get error detection
+exit $?
