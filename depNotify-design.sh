@@ -83,12 +83,13 @@
     "Installing Utilities...,desktoppr"
     "Installing NoMAD...,nomad"
     "Installing Java for Mac...,java"
-    "Installing FileMaker Pro 15...,filemaker15"
-    "Installing FileMaker Plug-Ins...,fmp15_plugins"
     "Installing FileMaker Pro 16...,filemaker16"
     "Installing FileMaker Plug-Ins...,fmp16_plugins"
-    "Installing Microsoft Office...,office365"
-#    "Installing Adobe Creative Cloud...,adobe_cc" ## currently not possible with our account
+    "Installing Microsoft Word...,word"
+    "Installing Microsoft PowerPoint...,powerpoint"
+    "Installing Microsoft Excel...,excel"
+    "Installing Microsoft Outlook...,outlook"
+    #    "Installing Adobe Creative Cloud...,adobe_cc" ## currently not possible with our account
     "Installing Chrome...,chrome"
     "Installing Firefox...,firefox"
     "Installing Slack...,slack"
