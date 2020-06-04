@@ -83,8 +83,8 @@
     "Installing Utilities...,desktoppr"
     "Installing NoMAD...,nomad"
     "Installing Java for Mac...,java"
-    "Installing FileMaker Pro 16...,filemaker16"
-    "Installing FileMaker Plug-Ins...,fmp16_plugins"
+    "Installing FileMaker Pro Advanced 18...,filemaker18"
+    "Installing FileMaker Plug-Ins...,fmpa18_plugins"
     "Installing Microsoft Word...,word"
     "Installing Microsoft PowerPoint...,powerpoint"
     "Installing Microsoft Excel...,excel"
@@ -96,6 +96,7 @@
     "Adding Open TOPS.app,add-open-tops"
     "Swabbing Deck...,set_dock_items"
     "Polishing Apple...,set_tenenz_wallpaper"
+    "Enabling FileVault...,filevault"
     "Updating Inventory...,dep_update_inventory"
   )
 

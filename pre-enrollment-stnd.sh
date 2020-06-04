@@ -35,3 +35,5 @@ userChoice=$("$jamfHelper" -windowType "$windowType" -lockHUD -icon "$icon" -tit
 # Trigger next policy
 
 /usr/local/jamf/bin/jamf policy -event "DEPNotify-Enrollment-standard"
+
+exit 0

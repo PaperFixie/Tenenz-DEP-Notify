@@ -82,10 +82,11 @@
     "Installing Utilities...,fonts"
     "Installing Utilities...,desktoppr"
     "Installing Java for Mac...,java"
-    "Installing FileMaker Pro 16...,filemaker16"
+    "Installing FileMaker Pro Advanced 18...,filemaker18"
+    "Installing FileMaker Plug-Ins...,fmpa18_plugins"
     "Adding Printers,install_printers"
     "Adding Open TOPS.app,add-open-tops"
-    "Swabbing Deck...,set_dock_items_press"
+    "Swabbing Deck...,set_dock_items_whs"
     "Polishing Apple...,set_tenenz_wallpaper"
     "Updating Inventory...,dep_update_inventory"
   )
